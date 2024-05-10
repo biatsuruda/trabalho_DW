@@ -1,0 +1,158 @@
+@import url(./reset.css);
+
+body{
+  background: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: white;
+  z-index: 100;
+}
+
+img {
+    width: 15%;
+    margin: auto;
+    display: block;
+  }
+
+.nav-logo img{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.box-form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 600px;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 2;
+  background: transparent;
+  border-radius: 20px;
+}
+
+.register-container{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+}
+
+.top h2{
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  padding: 90px 0 30px 0; 
+  text-transform: uppercase;
+}
+
+.input-field{
+  font-size: 15px;
+  background: rgba(173, 164, 164, 0.2);
+  color: #000000;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: 2px solid rgb(255, 6, 68);
+  border-radius: 10px;
+  outline: none;
+  transition: .2s ease;
+}
+
+.input-field:hover, .input-field:focus{
+  background: rgba(10, 10, 10, 0.45);
+}
+
+::-webkit-input-placeholder{
+  color: #000000;
+}
+
+.input-box i{
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #000000;
+}
+
+.label-term{
+  padding-bottom: 20px;
+  padding-top: -60px;
+  color: #000000;
+}
+
+.label-term .select-op{
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.2);
+  color: rgb(255, 243, 246);
+  border: none;
+  border-radius: 15px;
+}
+
+.login {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  width: 90%; 
+  margin-top: -100px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(239, 20, 115, 0.7);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.login:hover {
+  background-color: rgba(239, 20, 115, 0.9);
+}
+
+
+
+footer{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(244, 36, 164);
+}
+
+footer img{
+  width: 5%;
+}
+
+footer .teste {
+    padding: 15px;
+    display: inline-block;
+}
+
+.teste a{
+    text-decoration: none;
+    color: wheat;
+}
+

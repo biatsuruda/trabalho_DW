@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../script/cadastro.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <title>Cadastre-se</title>
+  </head>
+
+  
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="../img/hello.png" alt="Hello Kitty" />
+        </div>
+        
+        <img src="../img/logo1.png" alt="" />
+      </nav>
+      
+      <main>
+        <div class="wrapper">
+          <div class="box-form">
+            <div class="register-container" id="register">
+              <div class="top">
+                <h2>Faça seu Login</h2>
+            </div>
+            <form>
+              <div class="input-box">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="name"
+                  name="name"
+                  placeholder="Nome completo"
+                  required
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              
+              <div class="input-box">
+                <label for="lname"></label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="cpf_cnpj"
+                  name="cpf_cnpj"
+                  placeholder="CPF ou CNPJ"
+                  required
+                  pattern="\d{2}-\d{2}-[a-z]{2}"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              
+              <div class="input-box">
+                <label for="lname"></label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <i class="bx bx-envelope"></i>
+              </div>
+              
+              <div class="input-box">
+                <label for="lname"></label>
+                <input
+                  type="date"
+                  class="input-field"
+                  id="birthday"
+                  name="birthday"
+                  placeholder="Nascimento"
+                  required
+                />
+                <i class="bx bx-balloon"></i>
+              </div>
+              
+              <div class="input-box">
+                <label for="lname"></label>
+                <input
+                  type="password"
+                  class="input-field"
+                  id="password"
+                  name="password"
+                  placeholder="Senha"
+                  required
+                />
+                <i class="bx bx-lock-alt"></i>
+              </div>
+              
+              <div class="label-term">
+                <label for="user_type">Concorda com os termos</label>
+                <select id="user_type" class="select-op" name="user_type">
+                  <option value="1">Sim</option>
+                  <option value="0">Não</option>
+                </select>
+              </div>
+              
+              <div class="input-box">
+                <input
+                  type="button"
+                  class="login"
+                  value="Login"
+                  onclick="cadastroUsuario();validarbirthday();"
+                />
+              </div>
+      
+            </form>
+          </div>
+        
+        </div>
+       
+      </main>
+    </div>
+    
+    <footer>
+      <p>Todos os direitos reservados &copy;</p>
+      <p>Desenvolvedoras</p>
+      <div class="teste">
+        <a
+          href="https://www.linkedin.com/in/bianca-tsuruda-prado-3666b421b/"
+          target="_blank"
+          >Bianca Tsuruda Prado</a
+        >
+      </div>
+      <div class="teste">
+        <a href="https://www.linkedin.com/in/sophia-scala-6361901a7/"
+          >Sophia Scala Francisco</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

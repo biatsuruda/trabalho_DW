@@ -1,0 +1,126 @@
+    .input-box i{
+        position: relative;
+        top: -35px;
+        left: 17px;
+        color: #000000;
+      }
+  
+  
+  input[type="text"] {
+    width: calc(100% - 40px); /* Ajustei a largura para 100% do contêiner pai menos 40px */
+    padding: 8px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-left: 5px; /* Aumentei a margem à esquerda para 20px */
+    margin-right: 5px; /* Centralizei horizontalmente o campo */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #000000;
+  }
+  
+  
+  button {
+    padding: 10px 20px; /* Ajustei o preenchimento para 10px no topo/fundo e 20px nos lados */
+    font-size: 18px;
+    background-color: #f445a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Isso faz com que o botão seja exibido como bloco, ocupando a largura total disponível */
+    margin: 0 auto; /* Isso centralizará o botão horizontalmente */
+  }
+  
+  button:hover {
+    background-color: #ff00b3;
+  }
+  
+  
+  
+  
+  body{
+    background: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  footer{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(244, 36, 164);
+  }
+  
+  footer img{
+    width: 5%;
+  }
+  
+  footer .teste {
+      padding: 15px;
+      display: inline-block;
+  }
+  
+  .teste a{
+      text-decoration: none;
+      color: wheat;
+  }
+
+  img {
+    width: 15%;
+    margin: auto;
+    display: block;
+  }
+
+.nav-logo img{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    line-height: 100px;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .top h2{
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 90px 0 30px 0; 
+    text-transform: uppercase;
+  }
+  .box-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1150px;
+    height: 600px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    background: transparent;
+    border-radius: 20px;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+
