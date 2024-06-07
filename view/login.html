@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../script/login.js"></script>
+  <link rel="stylesheet" href="../css/login.css" />
+  <title>Tela de Login</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="../img/hello.png" alt="Hello Kitty" />
+      </div>
+      <img src="../img/logo1.png" alt="" />
+    </nav>
+    <main>
+      <div class="box-form">
+        <div class="register-container" id="register">
+          <div class="top">
+            <input
+              type="button"
+              class="cadastrarEndereco"
+              value="Cadastrar um novo Endereço"
+              onclick="redirecionarParaEndereco()"
+            />
+            <h2>Listagem de Endereços</h2>
+            <div id="endereco"></div>
+          </div>
+        </div>
+        <!-- Botão para voltar para a tela de cadastro -->
+        <div class="input-box">
+          <button class="voltarTelaInicial" onclick="window.location.href = 'index.html';">Voltar para tela inicial</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>Todos os direitos reservados &copy;</p>
+    <p>Desenvolvedoras</p>
+    <div class="teste">
+      <a href="https://www.linkedin.com/in/bianca-tsuruda-prado-3666b421b/" target="_blank">Bianca Tsuruda Prado</a>
+    </div>
+    <div class="teste">
+      <a href="https://www.linkedin.com/in/sophia-scala-6361901a7/">Sophia Scala Francisco</a>
+    </div>
+  </footer>
+
+  <script>
+    // Função para exibir os dados salvos do local storage
+    function exibirEnderecoSalvo() {
+      // Verifica se há dados salvos no local storage com o ID "endereco"
+      if(localStorage.getItem('endereco')) {
+        // Recupera os dados salvos do local storage
+        const enderecoData = JSON.parse(localStorage.getItem('endereco'));
+        // Exibe os dados na div com o ID "endereco"
+        document.getElementById('endereco').innerHTML = `
+          <p>Título: ${enderecoData.titulo}</p>
+          <p>CEP: ${enderecoData.cep}</p>
+          <p>Endereço: ${enderecoData.endereco}</p>
+          <p>Número: ${enderecoData.numero}</p>
+        `;
+      } else {
+        // Se não houver dados salvos, exibe uma mensagem indicando isso
+        document.getElementById('endereco').innerHTML = '<p>Nenhum endereço cadastrado.</p>';
+      }
+    }
+
+    // Chama a função para exibir os dados salvos quando a página carrega
+    window.onload = exibirEnderecoSalvo;
+
+    function redirecionarParaEndereco() {
+      window.location.href = 'endereco.html';
+    }
+  </script>
+</body>
+</html>
+
+

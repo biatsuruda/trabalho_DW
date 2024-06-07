@@ -1,0 +1,110 @@
+@import url(./reset.css);
+
+body {
+  background: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: white;
+  z-index: 100;
+}
+
+img {
+  width: 15%;
+  margin: auto;
+  display: block;
+}
+
+.nav-logo img {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.login:hover {
+  background-color: rgba(239, 20, 115, 0.9);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(244, 36, 164);
+}
+
+footer img {
+  width: 5%;
+}
+
+footer .teste {
+  padding: 15px;
+  display: inline-block;
+}
+
+.teste a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.top {
+    position: relative; /* Alterado para relative */
+    margin-top: -150px; /* Reduzindo o espaçamento superior */
+  }
+  
+  .top h2 {
+    color: #000;
+    margin-bottom: 10px; /* Adicionando espaço abaixo do título */
+  }
+  
+  .cadastrarEndereco {
+    position: fixed;
+    bottom: 50px; /* Altere este valor para ajustar a posição vertical */
+    right: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #e1043b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cadastrarEndereco:hover {
+    background-color: #db5679;
+  }
+
+  .voltarTelaInicial {
+    position: fixed;
+    bottom: 50px; /* Ajuste conforme necessário */
+    left: 20px; /* Posição à esquerda da tela */
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #e1043b; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .voltarTelaInicial:hover {
+    background-color: #db5679; /* Cor de fundo azul mais escura ao passar o mouse */
+  }

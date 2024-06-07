@@ -1,0 +1,296 @@
+.input-box {
+    margin-bottom: 25px; /* Adiciona espaço entre os campos */
+  }
+  
+  footer {
+    font-family: 'Sacramento', cursive;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(244, 36, 164);
+    width: 100%;
+  }
+  
+  footer .teste {
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .teste a {
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .nav-logo img {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: white;
+    z-index: 100;
+    font-family: 'Sacramento', cursive;
+  
+  }
+  
+  img {
+      width: 15%;
+      margin: auto;
+      display: block;
+    }
+  
+  .nav-logo img{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top h2 {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 90px 0 30px 0;
+    text-transform: uppercase;
+  }
+  
+  .box-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 600px; /* Define a largura máxima */
+    height: auto; /* Remove a altura fixa */
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  .input-box input[type="text"],
+  .input-box input[type="password"] {
+      width: calc(100% - 40px); /* Ajusta a largura para 100% menos 40px */
+      padding: 8px;
+      border: 2px solid #ff69b4;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: 'Sacramento', cursive;
+  }
+  
+  .input-box input[type="text"]::placeholder,
+  .input-box input[type="password"]::placeholder {
+      color: #000000;
+  }
+  
+  .input-box {
+    margin-bottom: 20px; /* Adiciona espaço entre os campos */
+  }
+  
+  .input-box label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura disponível */
+    margin-bottom: 5px; /* Adiciona espaço entre os rótulos e os campos */
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .input-box input[type="text"] {
+    width: calc(100% - 40px); /* Ajusta a largura para 100% menos 40px */
+    padding: 8px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .input-box input[type="text"]::placeholder {
+    color: #000000;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f445a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  button:hover {
+    background-color: #ff00b3;
+  }
+  
+  body {
+    background: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  footer {
+    font-family: 'Sacramento', cursive;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(244, 36, 164);
+    width: 100%;
+  }
+  
+  footer img {
+    width: 5%;
+  }
+  
+  footer .teste {
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .teste a {
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  .nav-logo img {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: white;
+    z-index: 100;
+    font-family: 'Sacramento', cursive;
+  
+  }
+  
+  img {
+      width: 15%;
+      margin: auto;
+      display: block;
+    }
+  
+  .nav-logo img{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top h2 {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 90px 0 30px 0;
+    text-transform: uppercase;
+  }
+  
+  .box-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    max-width: 600px; /* Define a largura máxima */
+    height: auto; /* Remove a altura fixa */
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  
+  .endereco-item {
+    background-color: white;
+    border: 2px solid pink;
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+  }
+
+  .input-box .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f445a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Sacramento', cursive;
+}
+
+.input-box .button:hover {
+    background-color: #ff00b3;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
+  .heart {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/coração-removebg-preview\ \(1\).png); /* Altere o caminho para a sua imagem de coração */
+    background-size: cover;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  
+  #heart-animation {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  
+

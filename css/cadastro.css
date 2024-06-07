@@ -1,0 +1,219 @@
+@import url(./reset.css);
+
+body{
+  background: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Sacramento', cursive;
+  
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: white;
+  z-index: 100;
+  font-family: 'Sacramento', cursive;
+
+}
+
+img {
+    width: 15%;
+    margin: auto;
+    display: block;
+  }
+
+.nav-logo img{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.box-form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 600px;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 2;
+  background: transparent;
+  border-radius: 20px;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.register-container{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.top h2{
+  color: black; /* Definir a cor da fonte como preto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adicionar sombreado */
+  font-size: 30px;
+  text-align: center;
+  padding: 90px 0 30px 0; 
+  text-transform: uppercase;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.input-field{
+  font-size: 15px;
+  background: rgba(173, 164, 164, 0.2);
+  color: #000000;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: 2px solid rgb(255, 6, 68);
+  border-radius: 10px;
+  outline: none;
+  transition: .2s ease;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.input-field:hover, .input-field:focus{
+  background: rgba(10, 10, 10, 0.45);
+  font-family: 'Sacramento', cursive;
+
+}
+
+::-webkit-input-placeholder{
+  color: #000000;
+  font-family: 'Sacramento', cursive;
+
+}
+
+.input-box i{
+  font-family: 'Sacramento', cursive;
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #000000;
+
+}
+
+.label-term{
+  padding-bottom: 20px;
+  padding-top: -60px;
+  color: #000000;
+}
+
+.label-term .select-op{
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.2);
+  color: rgb(255, 243, 246);
+  border: none;
+  border-radius: 15px;
+}
+
+.login {
+  font-size: 15px;
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width: 90%;
+  margin-top: -90px; /* Ajuste o valor para mover o botão para cima */
+  margin-left: 30px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background:rgb(244, 36, 164);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.login:hover {
+  background-color: rgba(239, 20, 115, 0.9); /* Cor de fundo ao passar o mouse */
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.7); /* Efeito brilhante */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */ 
+}
+
+
+footer{
+  font-family: 'Sacramento', cursive;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(244, 36, 164);
+}
+
+footer img{
+  width: 5%;
+}
+
+footer .teste {
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Sacramento', cursive;
+
+}
+
+.teste a{
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Sacramento', cursive;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/coração-removebg-preview\ \(1\).png); /* Altere o caminho para a sua imagem de coração */
+  background-size: cover;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+#heart-animation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+

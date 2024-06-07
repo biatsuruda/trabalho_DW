@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../script/home.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div id="heart-container">
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="../img/hello.png" alt="Hello Kitty" />
+        </div>
+        <img src="../img/logo1.png" alt="" />
+      </nav>
+      <main>
+        <div class="wrapper">
+          <div class="box-form">
+            <div class="register-container" id="register">
+              <div class="top">
+                <h2>Faça seu Login</h2>
+              </div>
+              <form>
+                <div class="input-box">
+                  <label for="email">E-mail</label>
+                  <input type="text" id="email" name="email" placeholder="Digite seu E-mail" required />
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua Senha" />
+                </div>                
+                <div class="input-box">
+                  <input type="button" class="button" value="Login" onclick="redirectToLogin();" />
+                </div>
+                <div class="register-link">
+                  <p>Ainda não possui cadastro? <a href="index.html">Cadastrar</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>Todos os direitos reservados &copy;</p>
+      <p>Desenvolvedoras</p>
+      <div class="teste">
+        <a href="https://www.linkedin.com/in/bianca-tsuruda-prado-3666b421b/" target="_blank">Bianca Tsuruda
+          Prado</a>
+      </div>
+      <div class="teste">
+        <a href="https://www.linkedin.com/in/sophia-scala-6361901a7/">Sophia Scala Francisco</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
